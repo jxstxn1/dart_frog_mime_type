@@ -8,7 +8,6 @@ Response onRequest(RequestContext context) {
     path.join(
       Directory.current.path,
       'public',
-      'web',
       'index.html',
     ),
   );

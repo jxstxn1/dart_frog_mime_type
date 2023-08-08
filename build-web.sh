@@ -15,5 +15,10 @@ flutter build web --web-renderer canvaskit --release
 # Go to root folder
 cd ..
 
+# Remove public folder if exists
+if [ -d "public" ]; then
+  rm -rf public
+fi
+
 # copy the mime_type_counter/build/web folder to public folder
-cp -r mime_type_counter/build/web public
+cp -r mime_type_counter/build/web/ public/
